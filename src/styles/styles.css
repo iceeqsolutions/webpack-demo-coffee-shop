@@ -77,3 +77,24 @@
     background-size: cover;
     background-repeat: no-repeat;
   }
+
+  /* FOOTNOTE */
+  .ics-container {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 5px;
+    position: fixed;
+    bottom: 0;
+    right: 10px;
+  }
+  
+  .ics-img {
+    height: 25px;
+  }
+  
+  .ics-p {
+    color: #fff;
+    font-family: "Chillax";
+    font-style: italic;
+  }
