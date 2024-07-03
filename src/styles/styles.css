@@ -43,6 +43,14 @@
     background-color: rgba(109, 108, 108, 0.5);
   }
 
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+  }
+  
   button {
     display: flex;
     padding: 5px;
@@ -54,7 +62,10 @@
     border: none;
   }
   
-  button:hover {
+  .home:hover,
+  .about:hover,
+  .menu:hover,
+  .contact:hover {
     color: rgb(235, 133, 0);
     cursor: pointer;
     font-size: 3.1rem;
