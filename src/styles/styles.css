@@ -12,7 +12,8 @@
   font-display: swap;
   font-style: normal;
 }
-  
+
+/* SHARED STYLE */
 * {
   font-family: "Signatura";
   box-sizing: border-box;
@@ -102,6 +103,54 @@ button {
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+/* ABOUT PAGE */
+.aboutUs {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 25vh;
+  left: 15vw;
+  width: 70vw;
+  height: 66vh;
+  background-color: rgba(109, 108, 108, 0.5);
+  border: 1px solid rgb(0, 185, 43);
+  border-radius: 20px;
+}
+
+.aboutContainer > img {
+  padding: 0 0 0 20px;
+}
+
+.aboutContainer {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  border-radius: 20px;
+  color: #fff;
+  background-color: rgba(68, 68, 68, 0.95);
+  box-shadow: 0px 0px 4px 2px #fff;
+  height: 22vh;
+  max-width: 100%;
+}
+
+.aboutTextContainer {
+  font-family: "Chillax";
+  padding: 20px;
+  width: 100%;
+}
+
+.aboutTextContainer > h3,
+.aboutTextContainer > p {
+  font-family: "Chillax";
+  font-style: italic;
+}
+
+.aboutTextContainer > h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
 
 /* FOOTNOTE */
 .ics-container {
