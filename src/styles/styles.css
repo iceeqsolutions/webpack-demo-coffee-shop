@@ -6,116 +6,120 @@
     font-style: normal;
   }
   
-  @font-face {
-    font-family: "Signatura";
-    src: url("../fonts/Signaturia-MApap.ttf") format("truetype");
-    font-display: swap;
-    font-style: normal;
-  }
+@font-face {
+  font-family: "Signatura";
+  src: url("../fonts/Signaturia-MApap.ttf") format("truetype");
+  font-display: swap;
+  font-style: normal;
+}
   
-  * {
-    font-family: "Signatura";
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
+* {
+  font-family: "Signatura";
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
   
-  body {
-    max-width: 100vw;
-  }
+body {
+  max-width: 100vw;
+}
   
-  header,
-  .homePage,
-  #content,
-  .oneMoreCoffeeImg {
-    max-width: 100%;
-  }
+header,
+.homePage,
+#content,
+.oneMoreCoffeeImg {
+  max-width: 100%;
+}
 
-  header {
-    width: 100%;
-    position: absolute;
-    top: 80px;
-    display: flex;
-    justify-content: center;
-    min-height: 70px;
-    height: 10vh;
-    max-height: 100px;
-    background-color: rgba(109, 108, 108, 0.5);
-  }
+header {
+  width: 100%;
+  position: absolute;
+  top: 80px;
+  display: flex;
+  justify-content: center;
+  min-height: 70px;
+  height: 10vh;
+  max-height: 100px;
+  background-color: rgba(109, 108, 108, 0.5);
+}
 
-  nav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-  }
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
   
-  button {
-    display: flex;
-    padding: 5px;
-    margin: 20px;
-    color: #fff;
-    font-size: 3rem;
-    font-weight: 700;
-    background: none;
-    border: none;
-  }
+button {
+  display: flex;
+  padding: 5px;
+  margin: 20px;
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 700;
+  background: none;
+  border: none;
+}
   
-  .home:hover,
-  .about:hover,
-  .menu:hover,
-  .contact:hover {
-    color: rgb(235, 133, 0);
-    cursor: pointer;
-    font-size: 3.1rem;
-  }
-  
-  .homePage {
-    height: 100vh;
-    background-image: url("../img/oneMoreCoffeeCup.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
+.home:hover,
+.about:hover,
+.menu:hover,
+.contact:hover {
+  color: rgb(235, 133, 0);
+  cursor: pointer;
+  font-size: 3.1rem;
+}
 
-  .aboutPage {
-    height: 100vh;
-    background-image: url("../img/oneMoreStreet.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
+.active {
+  color: rgb(0, 185, 43);
+}
   
-  .menuPage {
-    height: 100vh;
-    background-image: url("../img/oneMoreMenu.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-  
-  .contactPage {
-    height: 100vh;
-    background-image: url("../img/oneMoreContact.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
+.homePage {
+  height: 100vh;
+  background-image: url("../img/oneMoreCoffeeCup.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
-  /* FOOTNOTE */
-  .ics-container {
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    gap: 5px;
-    position: fixed;
-    bottom: 0;
-    right: 10px;
-  }
+.aboutPage {
+  height: 100vh;
+  background-image: url("../img/oneMoreStreet.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
   
-  .ics-img {
-    height: 25px;
-  }
+.menuPage {
+  height: 100vh;
+  background-image: url("../img/oneMoreMenu.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
   
-  .ics-p {
-    color: #fff;
-    font-family: "Chillax";
-    font-style: italic;
-  }
+.contactPage {
+  height: 100vh;
+  background-image: url("../img/oneMoreContact.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* FOOTNOTE */
+.ics-container {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 5px;
+  position: fixed;
+  bottom: 0;
+  right: 10px;
+}
+  
+.ics-img {
+  height: 25px;
+}
+  
+.ics-p {
+  color: #fff;
+  font-family: "Chillax";
+  font-style: italic;
+}

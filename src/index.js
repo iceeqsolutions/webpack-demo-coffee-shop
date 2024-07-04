@@ -13,6 +13,7 @@ const contactPage = document.querySelector(".contact");
 
 const content = document.querySelector("#content");
 content.appendChild(home());
+homePage.classList.add("active");
 content.appendChild(icsStatement());
 
 // Navigation
