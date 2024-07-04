@@ -78,6 +78,27 @@
     background-repeat: no-repeat;
   }
 
+  .aboutPage {
+    height: 100vh;
+    background-image: url("../img/oneMoreStreet.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .menuPage {
+    height: 100vh;
+    background-image: url("../img/oneMoreMenu.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .contactPage {
+    height: 100vh;
+    background-image: url("../img/oneMoreContact.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
   /* FOOTNOTE */
   .ics-container {
     display: flex;
