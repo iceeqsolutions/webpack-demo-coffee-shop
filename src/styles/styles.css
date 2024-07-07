@@ -136,6 +136,7 @@ button {
 .home:hover,
 .about:hover,
 .menu:hover,
+.location:hover,
 .contact:hover {
   color: rgb(235, 133, 0);
   cursor: pointer;
@@ -246,6 +247,13 @@ button {
   padding-right: 10px;
   text-align: end;
   margin: 0 auto;
+}
+
+/* LOCATIONS */
+.locationPage {
+  position: relative;
+  max-height: 100%;
+  background-image: url("../img/locationBkg.jpg");
 }
 
 /* CONTACT PAGE */
