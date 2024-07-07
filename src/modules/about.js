@@ -4,23 +4,28 @@ import img3 from "../img/aboutImg3.jpg";
 
 function about() {
     const container = document.createElement("div");
-    container.classList = "aboutPage";
+    container.className = "aboutPage";
+    const content = document.createElement("div");
+    content.className = "aboutContent";
 
     const aboutArray = [
         {
           header: "Finest Resources",
           text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse, quas iusto. Ex sapiente molestias sequi harum, amet iusto odit cum consequatur obcaecati culpa error magnam enim dolores minus voluptatibus saepe aspernatur. Illum architecto illo voluptate!",
           pic: `${img1}`,
+          class: "img1",
         },
         {
           header: "100% Taste",
           text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel ab laboriosam pariatur, neque, ut magni odio, animi vero nostrum tempora corporis nobis!",
           pic: `${img2}`,
+          class: "img2",
         },
         {
           header: "Served With Love Every Time",
           text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur neque eius temporibus commodi laborum.",
           pic: `${img3}`,
+          class: "img3",
         },
       ];
     
@@ -37,6 +42,7 @@ function about() {
         aboutTextContainer.classList = "aboutTextContainer";
         img.setAttribute("height", "160px");
         img.setAttribute("width", "210px");
+        img.className = element.class;
 
         header.textContent = element.header;
         descr.textContent = element.text;
@@ -53,7 +59,8 @@ function about() {
         return aboutUs;
     }
 
-    container.appendChild(updateAbout());
+    content.appendChild(updateAbout());
+    container.appendChild(content);
 
     return container;
 }

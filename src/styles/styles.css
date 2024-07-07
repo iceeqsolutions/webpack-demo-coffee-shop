@@ -23,8 +23,15 @@
   
 body {
   max-width: 100vw;
+  min-height: 100vh;
 }
   
+.aboutPage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 header,
 .homePage,
 #content,
@@ -32,15 +39,40 @@ header,
   max-width: 100%;
 }
 
+/* Page Structure */
+.aboutContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 230px 0 50px 0;
+}
+
+
+/* Page Background */
+.aboutPage,
+.menuPage,
+.contactPage {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.aboutContainer {
+
+}
+
+/* NAVBAR */
 header {
   width: 100%;
   position: absolute;
+  z-index: 2;
   top: 80px;
   display: flex;
   justify-content: center;
   min-height: 70px;
-  height: 10vh;
-  max-height: 100px;
+  height: 100px;
   background-color: rgba(109, 108, 108, 0.5);
 }
 
@@ -75,7 +107,8 @@ button {
 .active {
   color: rgb(0, 185, 43);
 }
-  
+
+/* HOME PAGE */
 .homePage {
   height: 100vh;
   background-image: url("../img/oneMoreCoffeeCup.jpg");
@@ -83,43 +116,25 @@ button {
   background-repeat: no-repeat;
 }
 
+/* ABOUT PAGE */
 .aboutPage {
-  height: 100vh;
   background-image: url("../img/oneMoreStreet.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-  
-.menuPage {
-  height: 100vh;
-  background-image: url("../img/oneMoreMenu.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-  
-.contactPage {
-  height: 100vh;
-  background-image: url("../img/oneMoreContact.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
-/* ABOUT PAGE */
 .aboutUs {
   display: flex;
   flex-direction: column;
-  position: relative;
-  top: 25vh;
-  left: 15vw;
-  width: 70vw;
-  height: 66vh;
+  width: 90vw;
+  max-width: 1000px;
+  height: max-content;
   background-color: rgba(109, 108, 108, 0.5);
-  border: 1px solid rgb(0, 185, 43);
+  border: 1px solid #333;
   border-radius: 20px;
+  margin: 20px 0 50px 0;
 }
 
 .aboutContainer > img {
-  padding: 0 0 0 20px;
+  padding: 20px 0 20px 20px;
 }
 
 .aboutContainer {
@@ -130,12 +145,15 @@ button {
   color: #fff;
   background-color: rgba(68, 68, 68, 0.95);
   box-shadow: 0px 0px 4px 2px #fff;
-  height: 22vh;
+  height: max-content;
   max-width: 100%;
 }
 
 .aboutTextContainer {
+  display: flex;
+  flex-direction: column;
   font-family: "Chillax";
+  justify-content: center;
   padding: 20px;
   width: 100%;
 }
@@ -148,9 +166,17 @@ button {
 
 .aboutTextContainer > h3 {
   font-size: 1.5rem;
-  font-weight: bold;
 }
 
+/* MENU PAGE */
+.menuPage {
+  background-image: url("../img/oneMoreMenu.jpg");
+}
+
+/* CONTACT PAGE */
+.contactPage {
+  background-image: url("../img/oneMoreContact.jpg");
+}
 
 /* FOOTNOTE */
 .ics-container {
@@ -171,4 +197,39 @@ button {
   color: #fff;
   font-family: "Chillax";
   font-style: italic;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 880px) {
+  .aboutTextContainer {
+   height: 200px;
+  }
+  .aboutContainer > img {
+    padding: 0 0 0 20px;
+  }
+}
+
+@media (max-width: 750px) {
+  .aboutTextContainer {
+   height: 250px;
+  }
+  .aboutTextContainer > h3 {
+    font-size: 1.3rem;
+  }
+  .aboutTextContainer > p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .aboutContainer {
+   flex-direction: column;
+  }
+  .aboutContainer > img {
+    padding: 20px 20px 0 20px;
+    height: 65vw;
+    width: 90vw;
+    max-width: 100%;
+    overflow: hidden;
+  }
 }
