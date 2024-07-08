@@ -5,6 +5,14 @@ import menu from "./modules/menu";
 import location from "./modules/location";
 import contact from "./modules/contact";
 import icsStatement from "./modules/icsFootnote";
+import favicon from "./img/favicon-16x16.png";
+
+// Add favicon
+const link = document.createElement("link");
+link.type = "image/png";
+link.rel = "shortcut icon";
+link.href = favicon;
+document.head.append(link);
 
 // Initial Page Rendering
 const homePage = document.querySelector(".home");
