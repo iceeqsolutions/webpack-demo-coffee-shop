@@ -140,7 +140,8 @@ header,
 .locationPageIcon:hover,
 .sendMailIcon:hover,
 .closeEmailIconContainer > img:hover,
-.closeMapIconContainer > img:hover {
+.closeMapIconContainer > img:hover,
+.contactForm > button:hover {
   cursor: pointer;
 }
 
@@ -211,16 +212,6 @@ button {
   padding: 20px 0 20px 20px;
 }
 
-/* .aboutContainer {
-  margin: 20px;
-  border-radius: 20px;
-  color: #fff;
-  background-color: rgba(68, 68, 68, 0.95);
-  box-shadow: 0px 0px 4px 2px #fff;
-  height: max-content;
-  max-width: 100%;
-} */
-
 .aboutTextContainer {
   flex-direction: column;
   font-family: "Chillax";
@@ -249,14 +240,6 @@ button {
   max-width: 800px;
   margin: 20px 0 50px 0;
 }
-
-/* .coffeeContainer {
-  margin: 20px;
-  color: #fff;
-  background-color: rgba(109, 108, 108, 0.5);
-  height: max-content;
-  max-width: 100%;
-} */
 
 .coffeeContainer > img {
   width: 10vw;
@@ -390,7 +373,84 @@ button {
 
 /* CONTACT PAGE */
 .contactPage {
+  position: relative;
   background-image: url("../img/oneMoreContact.jpg");
+}
+
+form {
+  display: grid;
+  align-self: center;
+  grid-template: 5vh 5vh 5vh 20vh / 22.5vw 22.5vw;
+  gap: 1vw;
+  grid-template-areas:
+    "heading heading"
+    "firstName lastName"
+    "phone email"
+    "subject subject";
+  position: absolute;
+  margin: 0 auto;
+  width: 50vw;
+  max-width: 900px;
+  height: 50vh;
+  top: 30%;
+  padding: 2vw;
+  background-color: rgba(109, 108, 108, 0.7);
+  border-radius: 20px;
+}
+
+.formField {
+  font-family: "Chillax";
+  justify-self: center;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: rgba(246, 245, 245, 0.7);
+}
+
+.formHeading {
+  grid-area: heading;
+  background: none;
+  color: #fff;
+}
+
+.firstNameInput {
+  grid-area: firstName;
+}
+
+.lastNameInput {
+  grid-area: lastName;
+}
+
+.phoneInput {
+  grid-area: phone;
+}
+
+.emailInput {
+  grid-area: email;
+}
+
+.firstNameInput,
+.lastNameInput,
+.phoneInput,
+.emailInput {
+  width: 100%;
+}
+
+.subjectInput {
+  grid-area: subject;
+  padding-top: 10px;
+  width: 100%;
+}
+
+.submitForm {
+  font-family: "Chillax";
+  font-size: 1rem;
+  justify-content: center;
+  max-width: 40vw;
+  width: 100px;
+  height: 30px;
+  border-radius: 10px;
+  background-color: rgb(0, 185, 43);
+  margin: 10px 0;
 }
 
 /* FOOTNOTE */
@@ -413,6 +473,19 @@ button {
 }
 
 /* MEDIA QUERIES */
+@media (max-width: 1015px) {
+  form {
+    grid-template: 5vh 5vh 5vh 20vh / 27.5vw 27.5vw;
+    grid-template-areas:
+      "heading heading"
+      "firstName lastName"
+      "phone email"
+      "subject subject";
+    width: 60vw;
+  }
+}
+
+
 @media (max-width: 880px) {
   .aboutTextContainer {
    height: 200px;
@@ -496,5 +569,30 @@ button {
   button {
     margin: 20px 10px;
     font-size: 2.5rem;
+  }
+  .home:hover,
+  .about:hover,
+  .menu:hover,
+  .location:hover,
+  .contact:hover {
+    font-size: 2.5rem;
+  }
+  form {
+    grid-template: 5vh 5vh 5vh 5vh 5vh 20vh / 55vw;
+    grid-template-areas:
+      "heading"
+      "firstName"
+      "lastName"
+      "phone"
+      "email"
+      "subject";
+    height: 60vh;
+    border-radius: 20px;
+  }
+  .formHeading {
+    font-size: 1rem;
+  }
+  .firstNameInput {
+    margin-top: 10px;
   }
 }
