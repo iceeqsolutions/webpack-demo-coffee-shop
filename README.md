@@ -18,7 +18,7 @@ The text content and some of the images has been stored in arrays. During page r
 
 ## Demo
 
-👁️ [Live Demo](https://test.com)
+👁️ [Live Demo](https://iceeqsolutions.github.io/webpack-demo-coffee-shop/)
 
 ## Built with
 
