@@ -55,6 +55,7 @@ button,
 .mapContainer,
 .closeEmailIconContainer,
 .closeMapIconContainer,
+.contactPage,
 .ics-container {
   display: flex;
 }
