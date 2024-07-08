@@ -71,7 +71,7 @@ function location() {
 
       const cafeImg = document.createElement("img");
       cafeImg.src = element.img;
-      cafeImg.setAttribute("height", "100px");
+      cafeImg.setAttribute("height", "150px");
       cafeImg.className = "cafeImg";
 
       cafeLocationContainer.appendChild(cafeImg);

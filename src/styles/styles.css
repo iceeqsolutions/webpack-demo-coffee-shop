@@ -15,7 +15,6 @@
 
 /* SHARED STYLE */
 * {
-  font-family: "Signatura";
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -24,6 +23,12 @@
 body {
   max-width: 100vw;
   min-height: 100vh;
+}
+
+/* Hidden elements */
+.emailContainer.hidden,
+.mapContainer.hidden {
+  display: none;
 }
   
 /* Display Flex */
@@ -66,7 +71,7 @@ nav,
 .iconContainer,
 .aboutContent,
 .locationPage,
-.locationConten,
+/* .locationContent, */
 .ics-container {
   align-items: center;
 }
@@ -94,6 +99,7 @@ header,
 /* Page Background */
 .aboutPage,
 .menuPage,
+.locationPage,
 .contactPage {
   flex-direction: column;
   min-height: 100vh;
@@ -159,6 +165,7 @@ nav {
 button {
   padding: 5px;
   margin: 20px;
+  font-family: "Signatura";
   color: #fff;
   font-size: 3rem;
   font-weight: 700;
@@ -289,6 +296,97 @@ button {
   background-image: url("../img/locationBkg.jpg");
 }
 
+.locationContent {
+  width: 70vw;
+  justify-content: center;
+  color: #fff;
+  margin: 50px 0 100px 0;
+}
+
+.videoContainer {
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  height: 230px;
+  overflow: hidden;
+}
+
+.videoBkg {
+  position: absolute;
+  z-index: 0;
+  min-width: 100%;
+  min-height: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.ourLocations {
+  width: 70vw;
+}
+
+.locationContainer {
+  justify-content: space-between;
+  margin: 20px;
+  background-color: rgba(52, 52, 52, 0.9);
+}
+
+.locationContainer,
+.cafeLocationContainer {
+  padding: 0 20px 0 10px;
+}
+
+.cafeImg {
+  margin: 20px 0;
+}
+
+.textContainer h4 {
+  width: 55px;
+}
+
+.textContainer p {
+  font-size: 0.8rem;
+  padding: 0 10px;
+}
+
+.locationTextContainer {
+  flex-direction: column;
+  font-family: "Chillax";
+  font-size: 1rem;
+  padding: 10px;
+}
+
+.iconContainer {
+  justify-content: center;
+}
+
+.locationPageIcon {
+  margin: 0 10px 0 0;
+}
+
+.emailContainer,
+.mapContainer {
+  flex-direction: column;
+  position: absolute;
+  top: 30vh;
+  left: 20vw;
+  width: 60vw;
+  background-color: rgba(52, 52, 52, 0.9);
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.closeEmailIconContainer,
+.closeMapIconContainer {
+  justify-content: end;
+}
+
+.closeEmailIconContainer > img,
+.closeMapIconContainer > img {
+  height: 40px;
+  margin-bottom: 20px;
+}
+
+
 /* CONTACT PAGE */
 .contactPage {
   background-image: url("../img/oneMoreContact.jpg");
@@ -321,6 +419,30 @@ button {
   .aboutContainer > img {
     padding: 0 0 0 20px;
   }
+  .locationContainer {
+    flex-direction: column;
+    padding: 20px 0 0 0;
+    align-items: start;
+  }
+  .cafeLocationContainer {
+    padding: 0 20px;
+    width: 100%;
+  }
+  .cafeImg {
+    margin: 0;
+    width: 210px;
+    height: 140px;
+  }
+  .locationTextContainer {
+    padding-left: 30px;
+  }
+  .locationPageIcon,
+  .sendMailIcon {
+    margin: 20px 10px;
+  }
+  .locationPageIcon {
+    margin-left: 45px;
+  }
 }
 
 @media (max-width: 750px) {
@@ -332,6 +454,19 @@ button {
   }
   .aboutTextContainer > p {
     font-size: 1rem;
+  }
+  .cafeLocationContainer {
+    flex-direction: column;
+  }
+  .cafeImg {
+    width: 300px;
+    height: 200px;
+  }
+  .locationContainer {
+    align-items: center;
+  }
+  .locationPageIcon {
+    margin-left: 0px;
   }
 }
 
@@ -352,5 +487,13 @@ button {
   }
   .menuTextContainer > p {
     font-size: 1rem;
+  }
+  .cafeImg {
+    width: 50vw;
+    height: 33vw;
+  }
+  button {
+    margin: 20px 10px;
+    font-size: 2.5rem;
   }
 }
