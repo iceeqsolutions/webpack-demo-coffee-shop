@@ -38,5 +38,5 @@ The text content and some of the images has been stored in arrays. During page r
 
 ![](./src/img/coffeeShopPages.jpg)
 
-<p align="center"><a href="https://iceeqsolutions.fi/"><img height="30px" width="211px" src="./src/img/iCS_Logo_Dark.png"></a></p>
+<p align="center"><a href="https://iceeqsolutions.fi/"><img height="30px" width="211px" src="./src/img/iCS_Logo_Light.png"></a></p>
 <br/><br/>
